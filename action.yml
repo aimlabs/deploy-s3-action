@@ -1,4 +1,4 @@
-name: "Github action for deploy a folder to Amazon s3 bucket 🗑"
+name: "Github action to deploy files to s3 bucket"
 description: "Easy way to build and upload distributable files of Vue application to amazon s3 bucket"
 
 branding:
