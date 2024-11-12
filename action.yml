@@ -26,6 +26,10 @@ inputs:
     description: "Location of the dist files. Default: dist."
     required: false
     default: ./dist
+  OVERWIRTE_CONTENT:
+    description: "Overwrite the previous deployment. Default: false"
+    required: false
+    default: "false"
 
 runs:
   using: "docker"
@@ -37,3 +41,4 @@ runs:
     AWS_BUCKET_NAME: ${{ inputs.AWS_BUCKET_NAME }}
     BUCKET_PATH: ${{ inputs.BUCKET_PATH }}
     DIST_LOCATION_CODE: ${{ inputs.DIST_LOCATION_CODE }}
+    OVERWIRTE_CONTENT: ${{ inputs.OVERWIRTE_CONTENT }}
